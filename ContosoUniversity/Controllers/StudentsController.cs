@@ -51,10 +51,7 @@ namespace ContosoUniversity.Controllers
             {
                 return NotFound();
             }
-            if (id == null)
-            {
-                return NotFound();
-            }
+
 
             var student = await _context.Students
             .Include(s => s.Enrollments)
